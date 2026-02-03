@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vite)",
+      "Bash(node -e:*)",
+      "Bash(node find_quotes.js:*)",
+      "Bash(tree:*)",
+      "Bash(npx vite build)"
+    ]
+  }
+}
