@@ -68,4 +68,15 @@ export interface AvgLetterDistItem {
   pairs: LetterDistPair[]
 }
 
-export type SortMethod = 'scrabble' | 'hash' | 'airport' | 'stock' | 'vowelcount' | 'avgdist'
+export interface RandomItem {
+  name: string
+  seed: number
+}
+
+export interface SortByItem {
+  name: string
+}
+
+export type SortDirection = 'asc' | 'desc'
+
+export type SortMethod = 'sortby' | 'random' | 'scrabble' | 'hash' | 'airport' | 'stock' | 'vowelcount' | 'avgdist'

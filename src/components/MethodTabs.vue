@@ -8,9 +8,11 @@ const props = defineProps<{
 const emit = defineEmits<{ select: [method: SortMethod] }>()
 
 const tabs: { key: SortMethod; label: string }[] = [
-  { key: 'scrabble', label: 'Scrabble' },
-  { key: 'hash',     label: 'SHA-256' },
-  { key: 'airport',  label: 'IATA Airport' },
+  { key: 'sortby',     label: 'Sort by' },
+  { key: 'random',     label: 'Random' },
+  { key: 'scrabble',   label: 'Scrabble' },
+  { key: 'hash',       label: 'SHA-256' },
+  { key: 'airport',    label: 'IATA Airport' },
   { key: 'stock',      label: 'Stock' },
   { key: 'vowelcount', label: 'Vowel Count' },
   { key: 'avgdist',    label: 'Avg Letter Dist' },
